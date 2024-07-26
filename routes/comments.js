@@ -5,5 +5,6 @@ const { getlinkedinComments,getyoutubeComments} = require('../controllers/commen
 router.post('/linkedin', getlinkedinComments);
 
 router.post('/youtube', getyoutubeComments);
+router.post('/linkedin', getlinkedinComments);
 
 module.exports = router;
