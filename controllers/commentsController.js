@@ -36,7 +36,7 @@ const getyoutubeComments = async (req, res) => {
   await newSentiment.save();
    
   try {    
-    axios.get(`http://127.0.0.1:5001/api/temp?url=${encodedUrl}`)
+    axios.get(`http://127.0.0.1:5001/api/youtube?url=${encodedUrl}`)
     .then(function (response) {
       count = response.data.sentiment_counts
       sum = count.negative + count.positive + count.neutral
